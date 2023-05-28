@@ -103,7 +103,7 @@ Kernel density estimation is a powerful technique that can be used to analyze da
 ```{r}
 
 #plot
-sp_name='Conepatus leuconotus'
+sp_name='Imaginosa nicolensis'
 
 densityPlot(sp$timeRad,rug=T, main=sp_name, adjust=2, xlab="Time", 
             ylab="Density", xcenter = 'midnight',extend = F)
@@ -141,7 +141,7 @@ plot<-ggplot(sp, aes(x = decimal))+
                alpha=0.3, fill="#FFD819")+
       
       # title and axes labels
-      labs(title="Conepatus leuconotus",
+      labs(title="Imaginosa nicolensis",
             y= "Number of records")+
       
       # convert to circular plot
@@ -203,8 +203,8 @@ overlapPlot(sp1$timeRad,
 
 #legend
 legend("topleft", 
-       c(expression(italic("Sp1")),
-         expression(italic("Sp2"))),
+       c(expression(italic("Imaginosa nicolensis")),
+         expression(italic("Pyronicolus imaginarius"))),
        lty=c(1,2),
        col=c(1,1),
        bty="n") 
